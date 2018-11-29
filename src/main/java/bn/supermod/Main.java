@@ -3,6 +3,8 @@ package bn.supermod;
 import org.apache.logging.log4j.Logger;
 
 import bn.supermod.creativetabs.DeamonTab;
+import bn.supermod.creativetabs.GhostTab;
+import bn.supermod.creativetabs.RainbowTab;
 import bn.supermod.proxy.CommonProxy;
 import bn.supermod.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
@@ -25,7 +27,9 @@ public class Main {
 	@SidedProxy(clientSide = "bn.supermod.proxy.ClientProxy", serverSide = "bn.supermod.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
-	public static final CreativeTabs CREATIVE_TAB = new DeamonTab();
+	public static final CreativeTabs DEAMON_TAB = new DeamonTab();
+	public static final CreativeTabs GHOST_TAB = new GhostTab();
+	public static final CreativeTabs RAINBOW_TAB = new RainbowTab();
 	
 
 	@EventHandler

@@ -12,7 +12,7 @@ public class ArmourBase  extends ItemArmor implements IHasModel {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.CREATIVE_TAB);
+		setCreativeTab(Main.DEAMON_TAB);
 		setMaxStackSize(1);
 		
 		ItemInit.ITEMS.add(this);
