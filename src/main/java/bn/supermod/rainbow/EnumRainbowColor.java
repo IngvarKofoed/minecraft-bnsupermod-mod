@@ -19,6 +19,20 @@ import net.minecraft.util.IStringSerializable;
 255,   0, 255
 255,   0, 128
 
+r4g0b0
+r4g2b0
+r4g4b0
+r2g4b0
+r0g4b0
+r0g4b2
+r0g4b4
+r0g2b4
+r0g0b4
+r2g0b4
+r4g0b4
+r4g0b2
+
+
 
 255,   0,   0
 255,  64,   0
@@ -48,17 +62,25 @@ import net.minecraft.util.IStringSerializable;
  * */
 
 public enum EnumRainbowColor implements IStringSerializable {
-	R4G0B0(0, 0, "r4g0b0"),
-	R4G2B0(1, 1, "r4g2b0");
+	R4G0B0(0, "r4g0b0"),
+	R4G2B0(1, "r4g2b0"),
+	R4G4B0(2, "r4g4b0"),
+	R2G4B0(3, "r2g4b0"),
+	R0G4B0(4, "r0g4b0"),
+	R0G4B2(5, "r0g4b2"),
+	R0G4B4(6, "r0g4b4"),
+	R0G2B4(7, "r0g2b4"),
+	R0G0B4(8, "r0g0b4"),
+	R2G0B4(9, "r2g0b4"),
+	R4G0B4(10, "r4g0b4"),
+	R4G2B2(11, "r4g0b2");
 
 	private static final EnumRainbowColor[] META_LOOKUP = new EnumRainbowColor[values().length];
 	private final int meta;
-    private final int damage;    
     private final String unlocalizedName;
 	
-	private EnumRainbowColor(int meta, int damage, String unlocalizedName) {
+	private EnumRainbowColor(int meta, String unlocalizedName) {
 		this.meta = meta;
-		this.damage = damage;
 		this.unlocalizedName = unlocalizedName;
 	}
 	
@@ -92,7 +114,6 @@ public enum EnumRainbowColor implements IStringSerializable {
         for (EnumRainbowColor color : values())
         {
             META_LOOKUP[color.getMetadata()] = color;
-            // DYE_DMG_LOOKUP[enumdyecolor.getDyeDamage()] = enumdyecolor;
         }
     }
 }

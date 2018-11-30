@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures":
+    {
+        "all": "bnsupermod:blocks/rainbow_dirt_r0g0b4"
+    }
+}

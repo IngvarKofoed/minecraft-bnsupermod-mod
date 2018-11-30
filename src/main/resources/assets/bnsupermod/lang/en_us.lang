@@ -34,6 +34,16 @@ tile.ghost_ore.name=Ghost Ore
 tile.rainbow_dirt.name=Rainbow Dirt
 tile.rainbow_dirt.r4g0b0.name=Rainbow Dirt (Red)
 tile.rainbow_dirt.r4g2b0.name=Rainbow Dirt (Orange)
+tile.rainbow_dirt.r4g4b0.name=Rainbow Dirt (Yellow)
+tile.rainbow_dirt.r2g4b0.name=Rainbow Dirt (Light green)
+tile.rainbow_dirt.r0g4b0.name=Rainbow Dirt (Green)
+tile.rainbow_dirt.r0g4b2.name=Rainbow Dirt (Green blue)
+tile.rainbow_dirt.r0g4b4.name=Rainbow Dirt (Turquoise)
+tile.rainbow_dirt.r0g2b4.name=Rainbow Dirt (Light blue)
+tile.rainbow_dirt.r0g0b4.name=Rainbow Dirt (Blue)
+tile.rainbow_dirt.r2g0b4.name=Rainbow Dirt (Purple)
+tile.rainbow_dirt.r4g0b4.name=Rainbow Dirt (Pink)
+tile.rainbow_dirt.r4g0b2.name=Rainbow Dirt (Red blue)
 tile.rainbow_stone.name=Rainbow Stone
 tile.rainbow_ore.name=Rainbow Ore
 

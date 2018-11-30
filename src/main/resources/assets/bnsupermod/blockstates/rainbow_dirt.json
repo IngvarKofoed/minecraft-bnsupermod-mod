@@ -2,6 +2,16 @@
     "variants":
     {                    
         "color=r4g0b0" : { "model": "bnsupermod:rainbow_dirt_r4g0b0" },
-        "color=r4g2b0" : { "model": "bnsupermod:rainbow_dirt_r4g2b0" }
+        "color=r4g2b0" : { "model": "bnsupermod:rainbow_dirt_r4g2b0" },        
+        "color=r4g4b0" : { "model": "bnsupermod:rainbow_dirt_r4g4b0" },        
+        "color=r2g4b0" : { "model": "bnsupermod:rainbow_dirt_r2g4b0" },
+        "color=r0g4b0" : { "model": "bnsupermod:rainbow_dirt_r0g4b0" },        
+        "color=r0g4b2" : { "model": "bnsupermod:rainbow_dirt_r0g4b2" },        
+        "color=r0g4b4" : { "model": "bnsupermod:rainbow_dirt_r0g4b4" },        
+        "color=r0g2b4" : { "model": "bnsupermod:rainbow_dirt_r0g2b4" },        
+        "color=r0g0b4" : { "model": "bnsupermod:rainbow_dirt_r0g0b4" },        
+        "color=r2g0b4" : { "model": "bnsupermod:rainbow_dirt_r2g0b4" },
+        "color=r4g0b4" : { "model": "bnsupermod:rainbow_dirt_r4g0b4" },
+        "color=r4g0b2" : { "model": "bnsupermod:rainbow_dirt_r4g0b2" }
     }
 }
