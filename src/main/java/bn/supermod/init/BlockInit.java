@@ -5,7 +5,7 @@ import java.util.List;
 
 import bn.supermod.Main;
 import bn.supermod.blocks.BlockBase;
-import bn.supermod.blocks.rainbow.RainbowDirtBlock;
+import bn.supermod.rainbow.blocks.RainbowDirtBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

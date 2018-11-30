@@ -32,6 +32,8 @@ tile.ghost_stone.name=Ghost Stone
 tile.ghost_ore.name=Ghost Ore
 
 tile.rainbow_dirt.name=Rainbow Dirt
+tile.rainbow_dirt.r4g0b0.name=Rainbow Dirt (Red)
+tile.rainbow_dirt.r4g2b0.name=Rainbow Dirt (Orange)
 tile.rainbow_stone.name=Rainbow Stone
 tile.rainbow_ore.name=Rainbow Ore
 
