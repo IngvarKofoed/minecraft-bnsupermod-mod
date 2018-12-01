@@ -6,7 +6,7 @@ import java.util.List;
 import bn.supermod.Main;
 import bn.supermod.Reference;
 import bn.supermod.items.ItemBase;
-import bn.supermod.items.armor.ArmourModel;
+import bn.supermod.items.armor.ArmourBase;
 import bn.supermod.items.tools.ToolAxeBase;
 import bn.supermod.items.tools.ToolHoeBase;
 import bn.supermod.items.tools.ToolPickaxeBase;
@@ -33,10 +33,10 @@ public class ItemInit {
 	public static final Item DEAMON_INGOT = new ItemBase("deamon_ingot", Main.DEAMON_TAB);
 	
 	// Armour
-	public static final Item DEAMON_HELMET = new ArmourModel("deamon_helmet", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.HEAD);
-	public static final Item DEAMON_CHESTPLATE = new ArmourModel("deamon_chestplate", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.CHEST);
-	public static final Item DEAMON_LEGGINGS = new ArmourModel("deamon_leggings", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.LEGS);
-	public static final Item DEAMON_BOOTS = new ArmourModel("deamon_boots", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.FEET);
+	public static final Item DEAMON_HELMET = new ArmourBase("deamon_helmet", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.HEAD);
+	public static final Item DEAMON_CHESTPLATE = new ArmourBase("deamon_chestplate", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.CHEST);
+	public static final Item DEAMON_LEGGINGS = new ArmourBase("deamon_leggings", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.LEGS);
+	public static final Item DEAMON_BOOTS = new ArmourBase("deamon_boots", Main.DEAMON_TAB, DEAMON_MODEL_MATERIAL, EntityEquipmentSlot.FEET);
 	
 	// Tools
 	public static final Item DEAMON_AXE = new ToolAxeBase("deamon_axe", DEAMON_TOOL_MATERIAL, Main.DEAMON_TAB);

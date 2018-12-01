@@ -29,6 +29,7 @@ public class ArmourModel extends ItemArmor implements IHasModel  {
 		Main.proxy.registerModel(this, 0);
 	}
 
+	/*
 	@Override
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default) 
 	{
@@ -51,5 +52,5 @@ public class ArmourModel extends ItemArmor implements IHasModel  {
 		}
 		
 		return null;
-	}
+	}*/
 }
