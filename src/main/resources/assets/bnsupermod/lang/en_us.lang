@@ -4,10 +4,15 @@ item.deamon_ingot.name=Deamon Ingot
 
 
 // Armour
-item.deamon_helmet.name=Deamon World Helmet
-item.deamon_chestplate.name=Deamon World Chestplate
-item.deamon_leggings.name=Deamon World Leggings
-item.deamon_boots.name=Deamon World Boots
+item.deamon_helmet.name=Deamon Helmet
+item.deamon_chestplate.name=Deamon Chestplate
+item.deamon_leggings.name=Deamon Leggings
+item.deamon_boots.name=Deamon Boots
+
+item.ghost_helmet.name=Ghost Helmet
+item.ghost_chestplate.name=Ghost Chestplate
+item.ghost_leggings.name=Ghost Leggings
+item.ghost_boots.name=Ghost Boots
 
 
 
