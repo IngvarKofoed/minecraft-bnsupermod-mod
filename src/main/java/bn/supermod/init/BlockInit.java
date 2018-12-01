@@ -19,10 +19,10 @@ public class BlockInit {
 	public static final Block DEAMON_ORE = new BlockBase("deamon_ore", Material.ROCK, Main.DEAMON_TAB);
 
 	// Ghost
-	public static final Block GHOST_BLOCK = new BlockBase("ghost_block", Material.IRON, Main.GHOST_TAB);
-	public static final Block GHOST_DIRT = new BlockBase("ghost_dirt", Material.GROUND, Main.GHOST_TAB);
-	public static final Block GHOST_STONE = new BlockBase("ghost_stone", Material.ROCK, Main.GHOST_TAB);
-	public static final Block GHOST_ORE = new BlockBase("ghost_ore", Material.ROCK, Main.GHOST_TAB);
+	// public static final Block GHOST_BLOCK = new BlockBase("ghost_block", Material.IRON, Main.GHOST_TAB);
+	// public static final Block GHOST_DIRT = new BlockBase("ghost_dirt", Material.GROUND, Main.GHOST_TAB);
+	// public static final Block GHOST_STONE = new BlockBase("ghost_stone", Material.ROCK, Main.GHOST_TAB);
+	// public static final Block GHOST_ORE = new BlockBase("ghost_ore", Material.ROCK, Main.GHOST_TAB);
 	
 	// Rainbow
 	public static final Block RAINBOW_DIRT = new RainbowDirtBlock("rainbow_dirt", Material.GROUND, Main.RAINBOW_TAB);

@@ -18,6 +18,12 @@ item.deamon_pickaxe.name=Deamon Pickaxe
 item.deamon_shovel.name=Deamon Shovel
 item.deamon_sword.name=Deamon Sword
 
+item.ghost_axe.name=Ghost Axe
+item.ghost_hoe.name=Ghost Hoe
+item.ghost_pickaxe.name=Ghost Pickaxe
+item.ghost_shovel.name=Ghost Shovel
+item.ghost_sword.name=Ghost Sword
+
 
 
 // Blocks

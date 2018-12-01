@@ -1,6 +1,6 @@
 package bn.supermod.creativetabs;
 
-import bn.supermod.init.BlockInit;
+import bn.supermod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -14,6 +14,6 @@ public class GhostTab extends CreativeTabs {
 	@Override
 	public ItemStack getTabIconItem() 
 	{
-		return new ItemStack(BlockInit.GHOST_BLOCK);
+		return new ItemStack(ItemInit.GHOST_SWORD);
 	}
 }
