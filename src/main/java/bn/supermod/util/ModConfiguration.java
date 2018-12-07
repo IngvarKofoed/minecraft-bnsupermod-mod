@@ -17,6 +17,7 @@ public class ModConfiguration {
 	//public static int GUI_ELECTRIC_SINTERING_FURNACE_ID = 4;
 	//public static int GUI_ENERGY_STORAGE_ID = 5;
 	
+	public static int DIMENSION_OVERWORLD_ID = 0;
 	public static int DIMENSION_DEAMON_ID = 2;
 	
 //	public static boolean spawnCustomBiomesInOverworld = true;
