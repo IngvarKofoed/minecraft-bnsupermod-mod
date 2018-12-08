@@ -4,6 +4,7 @@ import bn.supermod.Main;
 import bn.supermod.commands.CommandTeleportDimension;
 import bn.supermod.ghost.init.GhostBlockInit;
 import bn.supermod.ghost.init.GhostItemInit;
+import bn.supermod.ghost.init.GhostRecipeInit;
 import bn.supermod.init.BiomeInit;
 import bn.supermod.init.BlockInit;
 import bn.supermod.init.DimensionInit;
@@ -100,6 +101,7 @@ public class RegistryHandler {
 	
 	public static void initRegistries(FMLInitializationEvent event)
 	{
+		GhostRecipeInit.init();
 		// NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 		// SoundsHandler.registerSounds();		
 	}
