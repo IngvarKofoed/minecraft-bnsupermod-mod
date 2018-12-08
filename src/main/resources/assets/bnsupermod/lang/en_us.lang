@@ -59,6 +59,7 @@ tile.rainbow_dirt.r4g0b2.name=Rainbow Dirt (Red blue)
 tile.rainbow_stone.name=Rainbow Stone
 tile.rainbow_ore.name=Rainbow Ore
 tile.rainbow_portal_brick.name=Rainbow Portal Brick
+tile.rainbow_portal_teleporter.name=Rainbow Portal Teleporter
 
 
 

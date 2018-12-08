@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "normal":
+        {
+            "model": "bnsupermod:rainbow_portal_teleporter"
+        }
+    }
+}

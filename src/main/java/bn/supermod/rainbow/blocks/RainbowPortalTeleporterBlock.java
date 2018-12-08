@@ -1,6 +1,13 @@
-package bn.supermod.deamon.blocks;
+package bn.supermod.rainbow.blocks;
 
-import net.minecraft.block.Block;
+import javax.annotation.Nullable;
+
+import bn.supermod.Main;
+import bn.supermod.blocks.BlockBase;
+import bn.supermod.commands.util.CustomTeleporter;
+import bn.supermod.deamon.tileentities.DeamonDimensionTeleporterTileEntity;
+import bn.supermod.init.BlockInit;
+import bn.supermod.util.ModConfiguration;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -18,20 +25,9 @@ import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import java.util.Random;
-
-import javax.annotation.Nullable;
-
-import bn.supermod.Main;
-import bn.supermod.blocks.BlockBase;
-import bn.supermod.commands.util.CustomTeleporter;
-import bn.supermod.deamon.tileentities.DeamonDimensionTeleporterTileEntity;
-import bn.supermod.init.BlockInit;
-import bn.supermod.util.ModConfiguration;
-
-public class DeamonDimensionTeleporterBlock extends BlockBase {
-	
-	public DeamonDimensionTeleporterBlock(String name, Material material, CreativeTabs tab) 
+public class RainbowPortalTeleporterBlock extends BlockBase
+{
+	public RainbowPortalTeleporterBlock(String name, Material material, CreativeTabs tab) 
 	{
 		super(name, material, tab);
 	}	
@@ -39,8 +35,6 @@ public class DeamonDimensionTeleporterBlock extends BlockBase {
 	@Override
 	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
 	{
-//		super.onEntityCollidedWithBlock(worldIn, pos, state, entityIn);
-		
 		if (entityIn instanceof EntityPlayerMP)
 		{
 			EntityPlayerMP player = (EntityPlayerMP)entityIn;

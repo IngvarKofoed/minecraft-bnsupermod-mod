@@ -8,6 +8,7 @@ import bn.supermod.blocks.BlockBase;
 import bn.supermod.deamon.blocks.DeamonDimensionTeleporterBlock;
 import bn.supermod.rainbow.blocks.RainbowDirtBlock;
 import bn.supermod.rainbow.blocks.RainbowPortalBrickBlock;
+import bn.supermod.rainbow.blocks.RainbowPortalTeleporterBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -32,6 +33,7 @@ public class BlockInit {
 	public static final Block RAINBOW_STONE = new BlockBase("rainbow_stone", Material.ROCK, Main.RAINBOW_TAB);
 	public static final Block RAINBOW_ORE = new BlockBase("rainbow_ore", Material.ROCK, Main.RAINBOW_TAB);
 	public static final Block RAINBOW_PORTAL_BRICK = new RainbowPortalBrickBlock("rainbow_portal_brick", Material.PORTAL, Main.RAINBOW_TAB);
+	public static final Block RAINBOW_PORTAL_TELEPORTER = new RainbowPortalTeleporterBlock("rainbow_portal_teleporter", Material.PORTAL, Main.RAINBOW_TAB);
 	
 	//public static final Block DEAMON_DIRT = new BlockDirtBase("copper_dirt", Main.CREATIVE_TAB);
 	//public static final Block COPPER_LEAVES = new BlockLeavesBase("copper_leaves");
