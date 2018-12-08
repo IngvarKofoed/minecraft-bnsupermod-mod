@@ -2,6 +2,7 @@ package bn.supermod.util.handlers;
 
 import bn.supermod.Main;
 import bn.supermod.commands.CommandTeleportDimension;
+import bn.supermod.ghost.init.GhostItemInit;
 import bn.supermod.init.BiomeInit;
 import bn.supermod.init.BlockInit;
 import bn.supermod.init.DimensionInit;
@@ -26,6 +27,7 @@ public class RegistryHandler {
 	public static void registerItems(RegistryEvent.Register<Item> event)
 	{
 		event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+		event.getRegistry().registerAll(GhostItemInit.ITEMS.toArray(new Item[0]));
 	}
 	
 	@SubscribeEvent
@@ -45,7 +47,16 @@ public class RegistryHandler {
 		{
 			if(item instanceof IHasModel)
 			{
-				Main.logger.warn(item);
+				Main.logger.info(item.getRegistryName());
+				((IHasModel)item).registerModels();
+			}
+		}
+		
+		for(Item item : GhostItemInit.ITEMS)
+		{
+			if(item instanceof IHasModel)
+			{
+				Main.logger.info(item.getRegistryName());
 				((IHasModel)item).registerModels();
 			}
 		}
@@ -54,7 +65,7 @@ public class RegistryHandler {
 		{
 			if(block instanceof IHasModel)
 			{
-				Main.logger.warn(block);
+				Main.logger.info(block);
 				((IHasModel)block).registerModels();
 			}
 		}

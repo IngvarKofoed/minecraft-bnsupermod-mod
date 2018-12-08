@@ -1,5 +1,7 @@
 package bn.supermod.items;
 
+import java.util.List;
+
 import bn.supermod.Main;
 import bn.supermod.init.ItemInit;
 import bn.supermod.util.IHasModel;
@@ -15,6 +17,15 @@ public class ItemBase  extends Item implements IHasModel
 		setCreativeTab(tab);
 		
 		ItemInit.ITEMS.add(this);
+	}
+	
+	public ItemBase(String name, CreativeTabs tab, List<Item> items)
+	{
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(tab);
+		
+		items.add(this);
 	}
 	
 	@Override
