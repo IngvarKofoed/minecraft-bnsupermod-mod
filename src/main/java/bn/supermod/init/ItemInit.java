@@ -27,8 +27,7 @@ public class ItemInit {
 	public static final ArmorMaterial GHOST_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("ghost_model", Reference.MODID + ":ghost_model", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 	
 	// Tool Materials
-	public static final ToolMaterial DEAMON_TOOL_MATERIAL = EnumHelper.addToolMaterial("deamon_tool", 2, 400, 3.0f, 5.0f, 20);
-	public static final ToolMaterial GHOST_TOOL_MATERIAL = EnumHelper.addToolMaterial("ghost_tool", 2, 400, 3.0f, 5.0f, 20);
+	public static final ToolMaterial DEAMON_TOOL_MATERIAL = EnumHelper.addToolMaterial("deamon_tool", 2, 400, 3.0f, 5.0f, 20);	
 	
 	// Items
 	public static final Item DEAMON_INGOT = new ItemBase("deamon_ingot", Main.DEAMON_TAB);
@@ -50,10 +49,4 @@ public class ItemInit {
 	public static final Item DEAMON_PICKAXE = new ToolPickaxeBase("deamon_pickaxe", DEAMON_TOOL_MATERIAL, Main.DEAMON_TAB);
 	public static final Item DEAMON_SHOVEL = new ToolShovelBase("deamon_shovel", DEAMON_TOOL_MATERIAL, Main.DEAMON_TAB);
 	public static final Item DEAMON_SWORD = new ToolSwordBase("deamon_sword", DEAMON_TOOL_MATERIAL, Main.DEAMON_TAB);
-	
-	// public static final Item GHOST_AXE = new ToolAxeBase("ghost_axe", GHOST_TOOL_MATERIAL, Main.GHOST_TAB);
-	public static final Item GHOST_HOE = new ToolHoeBase("ghost_hoe", GHOST_TOOL_MATERIAL, Main.GHOST_TAB);
-	public static final Item GHOST_PICKAXE = new ToolPickaxeBase("ghost_pickaxe", GHOST_TOOL_MATERIAL, Main.GHOST_TAB);
-	public static final Item GHOST_SHOVEL = new ToolShovelBase("ghost_shovel", GHOST_TOOL_MATERIAL, Main.GHOST_TAB);
-	public static final Item GHOST_SWORD = new ToolSwordBase("ghost_sword", GHOST_TOOL_MATERIAL, Main.GHOST_TAB);
 }

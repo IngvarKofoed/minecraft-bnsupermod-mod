@@ -2,6 +2,7 @@ package bn.supermod.util.handlers;
 
 import bn.supermod.Main;
 import bn.supermod.commands.CommandTeleportDimension;
+import bn.supermod.ghost.init.GhostBlockInit;
 import bn.supermod.ghost.init.GhostItemInit;
 import bn.supermod.init.BiomeInit;
 import bn.supermod.init.BlockInit;
@@ -34,6 +35,7 @@ public class RegistryHandler {
 	public static void registerBlocks(RegistryEvent.Register<Block> event)
 	{
 		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+		event.getRegistry().registerAll(GhostBlockInit.BLOCKS.toArray(new Block[0]));
 		TileEntityHandler.registerTileEntities();
 		//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCopperChest.class, new RenderCopperChest());
 	}
@@ -62,6 +64,15 @@ public class RegistryHandler {
 		}
 		
 		for(Block block : BlockInit.BLOCKS)
+		{
+			if(block instanceof IHasModel)
+			{
+				Main.logger.info(block);
+				((IHasModel)block).registerModels();
+			}
+		}
+		
+		for(Block block : GhostBlockInit.BLOCKS)
 		{
 			if(block instanceof IHasModel)
 			{

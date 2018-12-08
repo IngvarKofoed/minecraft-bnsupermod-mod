@@ -1,5 +1,7 @@
 package bn.supermod.blocks;
 
+import java.util.List;
+
 import bn.supermod.Main;
 import bn.supermod.init.BlockInit;
 import bn.supermod.init.ItemInit;
@@ -20,6 +22,17 @@ public class BlockBase extends Block implements IHasModel {
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
+	}
+	
+	public BlockBase(String name, Material material, CreativeTabs tab, List<Block> blocks, List<Item> items) 
+	{
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(tab);
+		
+		blocks.add(this);
+		items.add(new ItemBlock(this).setRegistryName(name));
 	}
 	
 	@Override
