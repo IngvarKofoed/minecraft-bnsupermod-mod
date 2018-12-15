@@ -45,8 +45,9 @@ public class DeamonDimensionTeleporterBlock extends BlockBase {
 		{
 			EntityPlayerMP player = (EntityPlayerMP)entityIn;
 			
-			WorldServer deamonWorld = player.getServer().getWorld(ModConfiguration.DIMENSION_DEAMON_ID);
+		//	WorldServer deamonWorld = player.getServer().getWorld(ModConfiguration.DIMENSION_DEAMON_ID);
 			
+			/*
 			boolean added = deamonWorld.getBlockState(new BlockPos(1, 100, 0)).getBlock().getRegistryName() == BlockInit.DEAMON_TELEPORTER.getRegistryName();
 			if (!added)
 			{
@@ -82,20 +83,25 @@ public class DeamonDimensionTeleporterBlock extends BlockBase {
 				addTeleporterBlock(deamonWorld, 1, 100, 0, returnPosX, returnPosY, returnPosZ);
 				addTeleporterBlock(deamonWorld, 0, 100, -1, returnPosX, returnPosY, returnPosZ);
 				addTeleporterBlock(deamonWorld, 0, 100, 1, returnPosX, returnPosY, returnPosZ);
-			}			
+			}*/			
 			
 			int targetDimension = ModConfiguration.DIMENSION_DEAMON_ID;
-			double posX = 0.5;
-			double posY = 102;
-			double posZ = 0.5;
+//			double posX = 0.5;
+	//		double posY = 102;
+		//	double posZ = 0.5;
 			if (player.dimension == ModConfiguration.DIMENSION_DEAMON_ID)
 			{
-				DeamonDimensionTeleporterTileEntity tileEntity = (DeamonDimensionTeleporterTileEntity)worldIn.getTileEntity(pos);
-				posX = tileEntity.getPlayerX();
-				posY = tileEntity.getPlayerY();
-				posZ = tileEntity.getPlayerZ();
+			//	DeamonDimensionTeleporterTileEntity tileEntity = (DeamonDimensionTeleporterTileEntity)worldIn.getTileEntity(pos);
+				//posX = tileEntity.getPlayerX();
+				//posY = tileEntity.getPlayerY();
+				//posZ = tileEntity.getPlayerZ();
 				targetDimension = 0;
 			}
+			
+			DeamonDimensionTeleporterTileEntity tileEntity = (DeamonDimensionTeleporterTileEntity)worldIn.getTileEntity(pos);
+			double posX = tileEntity.getPlayerX();
+			double posY = tileEntity.getPlayerY();
+			double posZ = tileEntity.getPlayerZ();
 			
 			Main.logger.info("Teleporting to: (" + posX + " ," + posY + " ," + posZ + ")");
 			
@@ -103,12 +109,13 @@ public class DeamonDimensionTeleporterBlock extends BlockBase {
 		}		
 	}
 	
+	/*
 	private void addTeleporterBlock(WorldServer deamonWorld, int x, int y, int z, double returnPosX, double returnPosY, double returnPosZ)
 	{
 		deamonWorld.setBlockState(new BlockPos(x, y, z), BlockInit.DEAMON_TELEPORTER.getDefaultState());
 		DeamonDimensionTeleporterTileEntity tileEntity = (DeamonDimensionTeleporterTileEntity)deamonWorld.getTileEntity(new BlockPos(x, y, z));
 		tileEntity.setReturnXYZ(returnPosX, returnPosY, returnPosZ);
-	}
+	}*/
 	
 	@Override
 	public boolean hasTileEntity(IBlockState state) 

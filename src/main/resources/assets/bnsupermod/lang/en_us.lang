@@ -37,6 +37,7 @@ tile.deamon_block.name=Deamon Block
 tile.deamon_dirt.name=Deamon Dirt
 tile.deamon_stone.name=Deamon Stone
 tile.deamon_ore.name=Deamon Ore
+tile.deamon_portal_center.name=Deamon Portal Center
 tile.deamon_portal_teleporter.name=Deamon Portal
 
 tile.ghost_block.name=Ghost Block

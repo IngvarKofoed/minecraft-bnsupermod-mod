@@ -6,6 +6,7 @@ import java.util.List;
 import bn.supermod.Main;
 import bn.supermod.blocks.BlockBase;
 import bn.supermod.deamon.blocks.DeamonDimensionTeleporterBlock;
+import bn.supermod.deamon.blocks.DeamonPortalCenterBlock;
 import bn.supermod.rainbow.blocks.RainbowDirtBlock;
 import bn.supermod.rainbow.blocks.RainbowPortalBrickBlock;
 import bn.supermod.rainbow.blocks.RainbowPortalTeleporterBlock;
@@ -20,6 +21,7 @@ public class BlockInit {
 	public static final Block DEAMON_DIRT = new BlockBase("deamon_dirt", Material.GROUND, Main.DEAMON_TAB);
 	public static final Block DEAMON_STONE = new BlockBase("deamon_stone", Material.ROCK, Main.DEAMON_TAB);
 	public static final Block DEAMON_ORE = new BlockBase("deamon_ore", Material.ROCK, Main.DEAMON_TAB);
+	public static final Block DEAMON_PORTAL_CENTER = new DeamonPortalCenterBlock("deamon_portal_center", Material.IRON, Main.DEAMON_TAB);
 	public static final Block DEAMON_TELEPORTER = new DeamonDimensionTeleporterBlock("deamon_portal_teleporter", Material.IRON, Main.DEAMON_TAB);
 	
 	// Ghost
